@@ -19,9 +19,14 @@
 
 ##################################################
 # Import Required Modules
+
+
+
 ##################################################
 
 # import name_of_module
+
+
 
 
 ##################################################
@@ -32,15 +37,35 @@
 
 # Exercise 1
 
-def name_of_function(arg_1: type, arg_2: type) -> type:
-    """Description of function.
+def quad_roots_1(x: float, a: float, b: float, c: float) -> float:
 
-    >>> don_t_forget_the_examples(0, 0)
-    answer_you_expect
+    """Return two real-valued roots of the quadratic equation.
+
+ 
+
+    >>> quad_roots_1(3,1,7,12)
+
+    [-3.0, -4.0]
+
+    >>> quad_roots_1(-5,1,2,-35)
+
+    [5.0, -7.0]
+
+    >>> quad_roots_1(1.5,1,-5.5,6)
+
+    [4.0, 1.5]
+
     """
-    answer = None # Replace with body of function
 
-    return answer
+    d = (b**2) - (4*a*c)
+
+    x_1 = (-b+math.sqrt(d))/(2*a)
+
+    x_2 = (-b-math.sqrt(d))/(2*a)
+
+ 
+
+    return [x_1,x_2]
 
 
 
